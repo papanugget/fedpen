@@ -1,0 +1,94 @@
+html, body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Vollkorn', serif;
+	font-size: 16px;
+	line-height: 1.8em;
+	background: #fafafa;
+}
+.navbar-right {
+	position: relative;
+	left: 10%;
+}
+.header {
+	text-align: center;
+}
+.header-img, .staff-img, .contact-img {
+	position: relative;
+	opacity: 0.70;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	/* 
+	set background-attachment to scroll to remove parallax 
+	*/
+	background-attachment: fixed;
+	min-height: 600px;
+	text-transform: uppercase;
+}
+.img-text {
+	font-size: 48px;
+	font-weight: bold;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 15%;
+	background-color: #000;
+	border-radius: 5px;
+	padding :10px 20px;
+	letter-spacing: 3px;
+	margin: auto;
+	clear: right;
+}
+.img-quote{
+	float:right;
+	font-size: 16px;
+	color: #fff;
+	position: absolute;
+	top: 75%;
+	left: 50%;
+	background-color: #000;
+	border-radius: 5px;
+	padding :10px 20px;
+	letter-spacing: 3px;
+	margin: auto;
+}
+.staff-text {
+	left: 50%;
+}
+.header-img {
+	background-image: url("../img/money.jpg");
+}
+.staff-img {
+	background-image: url("../img/about2.jpg");
+	min-height: 300px;
+}
+.contact-img {
+	background-image: url("../img/phone.jpg");
+	min-height: 300px;
+}
+.contact-text {
+	left: 10%;
+}
+h2:before{
+	display:block;
+	content: "";
+	margin-top: -75px;
+	height: 75px;
+	visibility: hidden;
+	pointer-events: none;
+}
+/* MEDIA QUERY */
+@media(max-width: 534px) {
+	.header-img, .staff-img{
+		background-attachment: scroll;
+	}
+	.img-quote {
+		display: none;
+	}
+}
+@media(max-width: 940px){
+	.img-quote {
+		display: none;
+	}
+}

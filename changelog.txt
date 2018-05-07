@@ -1,0 +1,10 @@
+0.1
+init source commit
+
+0.2 
+added padding to prevent butting up against browser top when clicking on nav links
+added contact image parallax section to further separate nav sections
+added smooth scrolling to nav links
+
+0.3
+changed background color to muted offwhite to ease eyestrain
